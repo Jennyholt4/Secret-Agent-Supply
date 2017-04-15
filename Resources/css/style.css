@@ -1,0 +1,165 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  font-family: helvetica;
+  color: white;
+}
+
+.site-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+
+.logo {
+  background-color: black;
+  padding: 0.66rem 0px 0.66rem .05rem;
+  margin: 0 auto;
+}
+
+.logo .site-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.header-image {
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+  height: 25rem;
+  background-size: cover;
+}
+
+.announcement {
+  display: inline-block;
+  background-color: black;
+  width: 20rem;
+  padding: 2rem 3rem;
+  margin-top: 9rem;
+  font-weight: bold;
+}
+
+.announcement h1 {
+  font-size: 2rem;
+  margin: 0.25rem auto auto auto;
+}
+
+/* Main Section */
+
+nav.links {
+  background-color: firebrick;
+  padding: 0.75rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav.menu-link {
+  background-color: firebrick;
+  padding: 0.75rem 0;
+}
+
+.menu-link ul {
+  display: flex;
+  justify-content: center;
+}
+
+/* Shop Section */
+
+.shop {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.item {
+  width: 30%;
+}
+
+.item-img {
+  border: 4px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  height: 9rem;
+}
+
+.item-img img {
+  max-width: 8rem;
+}
+
+.item span {
+  display: block;
+  background-color: black;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+/* Store-info Section */
+.store-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0 4rem 0;
+
+}
+
+.info-words {
+  background-color: black;
+  padding: 1rem 0 1rem 2rem;
+}
+
+.info-numbers {
+  color: black;
+}
+
+/* Footer Section */
+
+footer {
+  background-color: black;
+}
+
+footer div {
+  background-color: black;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Media Queries */
+/* Large */
+@media only screen and (min-width: 1024px){
+  .menu-link {
+    display: none;
+  }
+}
+
+/* Medium */
+@media only screen and (max-width: 1024px){
+  .item {
+    width: 47%;
+  }
+  .links {
+    display: none;
+    }
+  #glasses {
+    display: none;
+  }
+}
